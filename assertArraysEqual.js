@@ -12,18 +12,18 @@ const eqArrays = function(arr1, arr2) {
   return eqOutput;
 };
 
-const assertArraysEqual = function(array1, array2, bool) {
-  if (eqArrays(array1, array2) === bool) {
-    console.log(`✅✅✅Assertion Passed: ${array1} === ${array2} is ${bool}`);
+const assertArraysEqual = function(array1, array2) {
+  if (eqArrays(array1, array2)) {
+    console.log(`✅✅✅Assertion Passed: ${array1} === ${array2}`);
   } else {
-    console.log(`❌❌❌Assertion Failed: ${array1} === ${array2} is NOT ${bool}`);
+    console.log(`❌❌❌Assertion Failed: ${array1} !== ${array2}`);
   }
 };
 
-assertArraysEqual([1, 2, 3], [1, 2, 3], true);
-assertArraysEqual([1, 2, 3], [1, 2, 3], true);
-assertArraysEqual([1, 2, 3], [3, 2, 1], false);
+assertArraysEqual([1, 2, 3], [1, 2, 3]);
+assertArraysEqual([1, 2, 3], [1, 2, 3]);
+assertArraysEqual([1, 2, 3], [3, 2, 1]);
 
-assertArraysEqual(["1", "2", "3"], ["1", "2", "3"], true);
-assertArraysEqual(["1", "2", "3"], ["1", "2", 3], false);
-assertArraysEqual([0, "2", "3"], [false, "2", "3"], false);
+assertArraysEqual(["1", "2", "3"], ["1", "2", "3"]);
+assertArraysEqual(["1", "2", "3"], ["1", "2", 3]);
+assertArraysEqual([0, "2", "3"], [false, "2", "3"]);
