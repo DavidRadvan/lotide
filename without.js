@@ -22,7 +22,6 @@ const assertArraysEqual = function(array1, array2) {
 
 const without = function(source, itemsToRemove) {
   let outputArray = [];
-  let discard = false;
   for (let i = 0; i < source.length; i++) {
     let discard = false;
     for (let j = 0; j < itemsToRemove.length; j++) {
@@ -35,7 +34,7 @@ const without = function(source, itemsToRemove) {
     }
   }
   return outputArray;
-}
+};
 
 assertArraysEqual(without([1, 2, 3], [1]), [2, 3]);
 assertArraysEqual(without([1, 2, 3], [1]), [1, 2, 3]);
