@@ -6,7 +6,7 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-function tail(array) {
+const tail = function(array) {
   return array.slice(1);
 };
 
