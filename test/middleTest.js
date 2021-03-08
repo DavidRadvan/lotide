@@ -1,7 +1,7 @@
 const middle = require("../middle");
 const assert = require('chai').assert;
 
-describe("#head", () => {
+describe("#middle", () => {
   it("odd numbered array lengths should return middle elements", () => {
     assert.deepEqual(middle([1, 2, 3, 4, 5]), [3]);
   });

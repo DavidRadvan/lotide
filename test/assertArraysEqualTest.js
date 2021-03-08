@@ -1,9 +1,9 @@
-const assertArraysEqual = require("../assertArraysEqual");
+const _ = require("../index");
 
-assertArraysEqual([1, 2, 3], [1, 2, 3]);
-assertArraysEqual([1, 2, 3], [1, 2, 3]);
-assertArraysEqual([1, 2, 3], [3, 2, 1]);
+_.assertArraysEqual([1, 2, 3], [1, 2, 3]);
+_.assertArraysEqual([1, 2, 3], [1, 2, 3]);
+_.assertArraysEqual([1, 2, 3], [3, 2, 1]);
 
-assertArraysEqual(["1", "2", "3"], ["1", "2", "3"]);
-assertArraysEqual(["1", "2", "3"], ["1", "2", 3]);
-assertArraysEqual([0, "2", "3"], [false, "2", "3"]);
+_.assertArraysEqual(["1", "2", "3"], ["1", "2", "3"]);
+_.assertArraysEqual(["1", "2", "3"], ["1", "2", 3]);
+_.assertArraysEqual([0, "2", "3"], [false, "2", "3"]);

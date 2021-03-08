@@ -3,7 +3,7 @@ const assert = require('chai').assert;
 
 const words = ["Yo Yo", "Lighthouse", "Labs"];
 
-describe("#head", () => {
+describe("#tail", () => {
   it("tail function should not alter original array", () => {
     tail(words);
     assert.strictEqual(words.length, 3);
